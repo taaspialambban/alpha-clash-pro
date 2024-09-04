@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-white">
+    <header></header>
+    <main>
+        <div class="text-white">
+            <div class="card bg-base-100 w-96 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="images/rectangle.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rectangle</h2>
+                  <p>Area (A) = w x I</p>
+                  <div class="flex">
+                    <input class="w-24 h-10 text-center" type="text" name="" id="rectangle-width" placeholder="width"><span>cm</span>
+                    <input class="w-24 text-center "type="text" name="" id="rectangle-length" placeholder="length"><span>cm</span>
+                  </div>
+                  <div>
+                    <p>Area: <span id="rectangle-area"></span>
+                        <span>cm<sup>2</sup></span>
+                    </p>
+                  </div>
+                  <div class="">
+                    <button onclick="calculateRectangleArea()" class="btn btn-primary text-white w-full">calculate</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
